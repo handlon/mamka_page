@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# Lenka Handlik page
 
 my mums web page 
 
