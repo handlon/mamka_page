@@ -22,7 +22,7 @@ export function Approach() {
             aria-hidden="true"
           />
           {t.approach.steps.map((step, i) => (
-            <StaggerItem key={step.title}>
+            <StaggerItem key={i}>
               <div className="group relative text-center transition-transform duration-300 hover:-translate-y-1.5 lg:text-left">
                 <div className="relative z-10 mb-4 flex justify-center lg:justify-start">
                   <div className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-gold bg-cream font-serif text-2xl font-bold text-gold-dark shadow-sm transition-colors duration-300 group-hover:bg-gold group-hover:text-cream">

@@ -25,7 +25,7 @@ export function Expertise() {
           {t.expertise.items.map((item, i) => {
             const Icon = icons[i];
             return (
-              <StaggerItem key={item.title}>
+              <StaggerItem key={i}>
                 <div className="group h-full rounded-sm border-l-[3px] border-gold bg-cream p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-soft md:p-7">
                   <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-cream-alt text-brand transition-colors duration-300 group-hover:bg-brand group-hover:text-cream">
                     <Icon size={22} weight="regular" />
