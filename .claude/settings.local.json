@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"/Users/honza/Desktop/Web Dev/mamka_page\" 2>/dev/null | head -30; echo \"---global skills---\"; ls -la ~/.claude/skills 2>/dev/null; echo \"---project claude---\"; ls -la \"/Users/honza/Desktop/Web Dev/mamka_page/.claude\" 2>/dev/null)",
+      "Bash(curl -s \"https://api.github.com/repos/anthropics/skills/contents/skills/frontend-design?ref=main\")",
+      "Bash(mkdir -p ~/.claude/skills/frontend-design)",
+      "Bash(curl -s -o ~/.claude/skills/frontend-design/SKILL.md \"https://raw.githubusercontent.com/anthropics/skills/main/skills/frontend-design/SKILL.md\")",
+      "Bash(curl -s -o ~/.claude/skills/frontend-design/LICENSE.txt \"https://raw.githubusercontent.com/anthropics/skills/main/skills/frontend-design/LICENSE.txt\")",
+      "Bash(curl -s \"https://api.github.com/repos/nextlevelbuilder/ui-ux-pro-max-skill\")",
+      "Bash(curl -s \"https://api.github.com/repos/nextlevelbuilder/ui-ux-pro-max-skill/contents/\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/main/README.md\")",
+      "Bash(curl -s \"https://api.github.com/repos/nextlevelbuilder/ui-ux-pro-max-skill/contents/.claude\")",
+      "Bash(curl -s \"https://api.github.com/repos/nextlevelbuilder/ui-ux-pro-max-skill/contents/.claude-plugin\")",
+      "Bash(curl -s \"https://api.github.com/repos/nextlevelbuilder/ui-ux-pro-max-skill/contents/.claude/skills\")",
+      "Bash(npm ls *)",
+      "Read(//Users/honza/**)",
+      "Bash(uipro --help)",
+      "Bash(npm root *)",
+      "Bash(rm -rf \"/Users/honza/Desktop/Web Dev/.claude/skills\")",
+      "Bash(rmdir \"/Users/honza/Desktop/Web Dev/.claude\")",
+      "Bash(rm -rf \"/Users/honza/Desktop/Web Dev/.claude\"; ls -la \"/Users/honza/Desktop/Web Dev/\" 2>/dev/null)"
+    ]
+  }
+}
