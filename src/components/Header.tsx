@@ -8,7 +8,7 @@ import { openCalendly } from "../lib/calendly";
 const SECTION_IDS = ["expertise", "story", "approach", "references", "contact"] as const;
 
 export function Header() {
-  const { t, locale, toggleLocale } = useLanguage();
+  const { t } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string>("");
@@ -72,7 +72,7 @@ export function Header() {
           <button
             onClick={() => scrollToId("home")}
             className="flex items-center gap-3 cursor-pointer"
-            aria-label={locale === "cs" ? "Přejít na začátek stránky" : "Go to top of page"}
+            aria-label="Přejít na začátek stránky"
           >
             <LogoMark size={40} />
             <span className="hidden text-xs font-semibold tracking-wide text-ink sm:inline">
@@ -97,13 +97,6 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <button
-              onClick={toggleLocale}
-              className="cursor-pointer rounded-full border border-border px-3 py-1.5 text-[12px] font-semibold tracking-wide text-ink transition-colors hover:border-gold hover:text-gold-dark"
-              aria-label="Switch language"
-            >
-              {locale === "cs" ? "EN" : "CS"}
-            </button>
             <button
               onClick={handleBook}
               className="hidden cursor-pointer rounded-full bg-brand px-5 py-2 text-[13px] font-semibold text-cream transition-colors duration-300 hover:bg-brand-dark lg:inline-block"

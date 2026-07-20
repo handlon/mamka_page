@@ -63,7 +63,13 @@ export interface Translation {
   };
 }
 
-export const translations: Record<"cs" | "en", Translation> = {
+// The site is currently Czech-only. The English translation is kept below in a
+// commented-out block (see "ENGLISH VERSION" at the bottom of this file) and is
+// updated to match the Czech copy. To re-enable language switching:
+//   1. Uncomment the `en` block and move it back inside `translations`.
+//   2. Change the type to Record<"cs" | "en", Translation>.
+//   3. Restore locale state in LanguageContext.tsx and the toggle in Header.tsx.
+export const translations: Record<"cs", Translation> = {
   cs: {
     meta: {
       title: "Lenka Handlíková – CFO služby pro české firmy",
@@ -81,10 +87,10 @@ export const translations: Record<"cs" | "en", Translation> = {
       titleLine1: "Finanční řešení,",
       titleLine2: "která opravdu fungují",
       intro:
-        "20+ let ve Škoda Auto a dalších velkých společnostech. Nyní pracuji s českými",
+        "20+ let ve Škoda Auto a VW koncernových společnostech. Od roku 2022 pracuji s českými",
       introHighlight: "malými a středními firmami",
       introRest:
-        "na implementaci finančních systémů, optimalizaci procesů a strategickém plánování. Praktický přístup – žádné teoretické poradenství.",
+        "zavádím finanční řízení, optimalizuji procesy a rychle se zorientuji i mimo finance: nákup a dodavatelé, cenotvorba, HR. Praktický přístup – žádné teoretické poradenství.",
       ctaPrimary: "Chcete konzultaci?",
       ctaSecondary: "Zjistit víc",
       stats: [
@@ -98,21 +104,17 @@ export const translations: Record<"cs" | "en", Translation> = {
       titleLine1: "Praxe z velkých projektů",
       titleLine2: "aplikovaná na vaši firmu",
       items: [
-        {
-          title: "Česká účetnictví & DPH",
+          {
+          title: "Reporting & controlling",
           description:
-            "Optimalizace účetní struktury a DPH agendy. Rozumím komplexnosti českého systému.",
+            "Optimalizace účetní osnovy. Dashboardy v češtině. Data, která vedení firmy opravdu chce vidět.",
         },
         {
-          title: "Odoo implementace",
+          title: "ERP implementace",
           description:
             "Nasazení a optimalizace finančních modulů ERP. Procesy, které opravdu fungují.",
         },
-        {
-          title: "Reporting & controlling",
-          description:
-            "Dashboardy v češtině. Data, která vedení firmy opravdu chce vidět.",
-        },
+
         {
           title: "Finanční strategie",
           description:
@@ -125,9 +127,9 @@ export const translations: Record<"cs" | "en", Translation> = {
       titleLine1: "Proč jsem si zvolila",
       titleLine2: "cestu externí CFO",
       paragraph1:
-        "Strávila jsem 20 let v automobilovém průmyslu. Byla jsem analytička, vedoucí týmu, senior manažerka. Milovala jsem to – velké projekty, rozpočty v miliardách, komplexní procesy.",
+        "Strávila jsem 20 let v automobilovém průmyslu. Začínala jsem jako analytička, postupně profesně rostla až do managementu firmy Škoda Auto a zároveň na jednatele dceřiných společností. Velké projekty, rozpočty v miliardách, komplexní procesy – škola, která se nedá ničím nahradit.",
       paragraph2:
-        "Pak jsem si uvědomila, že chci něco jiného. Kvalitu života. Čas na rodinu. Možnost vybírat si projekty, které mě opravdu zajímají.",
+        "Pak jsem ale zjistila, že už nemám kam růst ani co nového se učit. A chtěla jsem svoje zkušenosti předávat tam, kde mají skutečný dopad: menším českým firmám, které si nemůžou dovolit vlastního CFO – ale potřebují ho úplně stejně.",
       highlights: [
         "Pracuji s českými firmami, kterým rozumím",
         "Nejsem jen poradce – jsem partner v řešení",
@@ -163,25 +165,25 @@ export const translations: Record<"cs" | "en", Translation> = {
       label: "Reference",
       titleLine1: "Co říkají firmy,",
       titleLine2: "se kterými jsem pracovala",
-      // TODO: replace with real recommendations from Lenka's LinkedIn profile.
       items: [
         {
           quote:
-            "Lenka nám pomohla nastavit reporting a controlling od základů. Poprvé jsme měli čísla, kterým vedení opravdu rozumělo a mohlo podle nich rozhodovat.",
-          name: "Jméno Příjmení",
-          role: "Jednatel, výrobní firma",
+            "Kéž by spolupráce se všemi byla jako s Lenkou. Efektivní, nápomocná a zároveň lidská. Na otázky dostanete jasné odpovědi. Pokud žádáte o radu, dostanete ji včetně možností a to se všemi dopady. Na naší spolupráci jsem oceňovala rychlost s jakou dokázala reagovat bez toho, aniž by utrpěla kvalita výstupů. Další ze schopností, kterou jsem kvitovala, byla schopnost mluvit jazykem, kterému dokáže porozumět i nefinanční člověk. V neposlední řadě se Lenka ukázala i jako dobrý učitel a parťák, naše spolupráce byla na bázi konzultací, finanční tým jí po velmi krátké době označil jako někoho, pod kým by chtěli růst.",
+          name: "Jitka Porazilová",
+          role: "People first!",
         },
         {
           quote:
-            "Praktický přístup bez zbytečné teorie. Implementaci Odoo dotáhla do konce a procesy skutečně fungují. Doporučuji každé rostoucí firmě.",
-          name: "Jméno Příjmení",
-          role: "Finanční ředitel, SME",
+            "Dohoda o spolupráci s Lenkou, před 2,5 lety, byla asi to nejlepší, co jsme mohli pro naši firmu udělat.Firma vyrostla z malého živnostníka na 17 poboček a bylo potřeba najít člověka, který má chuť si doslova s námi vyhrnout rukávy a stavět celou organizaci firmy od píky. Měli jsme to štěstí, že jsme narazili na někoho, tak komplexního jako je Lenka, protože na to penzum práce, na které jsme jí využili, by jinde poptávali 3.Lenka se stala mojí pravou rukou a pomohla mi nejen v oblasti financí, kde vystavěla celý reporting od nuly, zavedla controlling a finanční řízení firmy přes čísla, zastřešila komunikaci mezi účetním a naší firmou, ale také jsme jí využili pro komplexní nastavení celofiremních procesů včetně přechodu na nový ERP systém. Byla mi oporou také v rozvoji businessu, kde se aktivně účastnila vyjednávání s dodavateli o podmínkách spolupráce, řešila se mnou nákladovou efektivitu a vyjednávání se všemi články řetězu o úsporách. Využili jsme ji také na HR témata, kde nejdřív nastavila nový systém odměňování zaměstnanců, nábory na administrativní pozice, personální a hodnotící pohovory a pokud byla potřeba mediace, tak za mě v této oblasti opravdu vyniká. Má neuvěřitelný talent se nacítit nejen do situace, ale i do lidí a následně konstruktivně shrnout body a dovést lidi k řešení. Lenka je za mě ideál manažera a má dar vést a rozvíjet lidi. Je vždy vstřícná, při problémech si zachovává chladnou hlavu a hledá optimální řešení a díky otevřené komunikaci k ní lidé mají důvěru a přicházejí k ní i s problémy, které by jinde nepřiznali. Vede to k velmi zdravé firemní kultuře, která je nyní, díky ní, i u nás. Velmi si jí vážím i po lidské stránce, protože je charakterní, laskavá a spravedlivá. Je mi velkou ctí s ní spolupracovat",
+          name: "Petra Steyrerová Machytková",
+          role: "Owner of retail chain Obuv Zóna",
         },
+
         {
           quote:
-            "Spolehlivá partnerka, která rozumí českému prostředí i velkým korporátním standardům. Ušetřila nám spoustu času i nákladů.",
-          name: "Jméno Příjmení",
-          role: "Majitelka, obchodní společnost",
+            "Lenka pro nás dělá finanční management. Je fakt úžasná! Nejenže má skvělé znalosti a zkušenosti, ale taky umí najít řešení, která opravdu fungují. A co je nejlepší, dokáže to vysvětlit tak, že tomu rozumí každý. Její přístup je profesionální, ale zároveň velmi přátelský. Opravdu si s ní rozumíme a jsme s ní maximálně spokojeni. Lenka, je pro nás prostě nepostradatelná, díky",
+          name: "Marian Pavlik",
+          role: "Innovation mindset creates innovation culture",
         },
       ],
     },
@@ -202,144 +204,147 @@ export const translations: Record<"cs" | "en", Translation> = {
       backToTop: "Nahoru",
     },
   },
-  en: {
-    meta: {
-      title: "Lenka Handlíková – CFO services for Czech businesses",
-    },
-    nav: {
-      expertise: "Expertise",
-      story: "About",
-      approach: "Approach",
-      references: "References",
-      contact: "Contact",
-      cta: "Book a consultation",
-    },
-    hero: {
-      eyebrow: "Fractional CFO",
-      titleLine1: "Financial solutions",
-      titleLine2: "that actually work",
-      intro:
-        "20+ years at Škoda Auto and other large corporations. I now work with Czech",
-      introHighlight: "small and mid-sized businesses",
-      introRest:
-        "on financial system implementation, process optimization, and strategic planning. A practical approach – no theoretical consulting.",
-      ctaPrimary: "Book a consultation",
-      ctaSecondary: "Learn more",
-      stats: [
-        { value: "20+", label: "years in finance" },
-        { value: "Škoda Auto", label: "and other major companies" },
-        { value: "100%", label: "hands-on approach" },
-      ],
-    },
-    expertise: {
-      label: "What I understand",
-      titleLine1: "Corporate-grade experience,",
-      titleLine2: "applied to your business",
-      items: [
-        {
-          title: "Czech accounting & VAT",
-          description:
-            "Optimizing accounting structure and VAT compliance. I understand the complexity of the Czech system.",
-        },
-        {
-          title: "Odoo implementation",
-          description:
-            "Deployment and optimization of ERP finance modules. Processes that actually work.",
-        },
-        {
-          title: "Reporting & controlling",
-          description:
-            "Dashboards that speak your language. Data that management actually wants to see.",
-        },
-        {
-          title: "Financial strategy",
-          description:
-            "Growth and cashflow planning. Analysis that leads to concrete decisions.",
-        },
-      ],
-    },
-    story: {
-      imagePlaceholder: "Your photo",
-      titleLine1: "Why I chose the",
-      titleLine2: "fractional CFO path",
-      paragraph1:
-        "I spent 20 years in the automotive industry. I was an analyst, a team lead, a senior manager. I loved it – large-scale projects, billion-crown budgets, complex processes.",
-      paragraph2:
-        "Then I realized I wanted something different. Quality of life. Time for family. The freedom to choose projects that genuinely interest me.",
-      highlights: [
-        "I work with Czech businesses I truly understand",
-        "I'm not just an advisor – I'm a partner in the solution",
-        "Focus on practice, not theoretical talk",
-      ],
-      closing:
-        "Today I help companies who don't have an in-house CFO but need one's expertise – so they don't get lost in the numbers and can focus on growth.",
-    },
-    approach: {
-      label: "How I work",
-      titleLine1: "Four steps",
-      titleLine2: "to a solution",
-      steps: [
-        {
-          title: "Listen",
-          description: "What's troubling you. What's unclear. What you want to achieve.",
-        },
-        {
-          title: "Analyze",
-          description: "Process, data, current state. No emotions. Just facts.",
-        },
-        {
-          title: "Propose",
-          description: "Solutions that can actually be implemented. Realistic ones.",
-        },
-        {
-          title: "Deliver",
-          description: "I help you put it into practice. This isn't theory.",
-        },
-      ],
-    },
-    references: {
-      label: "References",
-      titleLine1: "What the businesses",
-      titleLine2: "I've worked with say",
-      // TODO: replace with real recommendations from Lenka's LinkedIn profile.
-      items: [
-        {
-          quote:
-            "Lenka helped us build reporting and controlling from the ground up. For the first time, management had numbers they actually understood and could act on.",
-          name: "Name Surname",
-          role: "Managing Director, manufacturing",
-        },
-        {
-          quote:
-            "A practical approach with no unnecessary theory. She saw the Odoo implementation through to the end, and the processes genuinely work. I recommend her to any growing company.",
-          name: "Name Surname",
-          role: "Finance Director, SME",
-        },
-        {
-          quote:
-            "A reliable partner who understands both the Czech environment and large corporate standards. She saved us a great deal of time and cost.",
-          name: "Name Surname",
-          role: "Owner, trading company",
-        },
-      ],
-    },
-    finalCta: {
-      label: "Contact",
-      title: "Let's book a consultation",
-      subtitle:
-        "Book a time online. The consultation is non-binding and I'll respond to you personally.",
-      bookLabel: "Book a time",
-      orLabel: "or reach me directly",
-      emailLabel: "Send an email",
-      phoneLabel: "Call me",
-    },
-    footer: {
-      role: "Fractional CFO",
-      location: "Mladá Boleslav, Czech Republic",
-      rights: "All rights reserved.",
-      backToTop: "Back to top",
-    },
-  },
 };
 
 export type Locale = keyof typeof translations;
+
+/* ==========================================================================
+ * ENGLISH VERSION — currently DISABLED (site is Czech-only).
+ * Kept in sync with the Czech copy above. To re-enable, see the instructions
+ * near the top of this file, then paste this object back in as `en:`.
+ * --------------------------------------------------------------------------
+ *
+ * en: {
+ *   meta: {
+ *     title: "Lenka Handlíková – CFO services for Czech businesses",
+ *   },
+ *   nav: {
+ *     expertise: "Expertise",
+ *     story: "About",
+ *     approach: "Approach",
+ *     references: "References",
+ *     contact: "Contact",
+ *     cta: "Book a consultation",
+ *   },
+ *   hero: {
+ *     eyebrow: "Fractional CFO",
+ *     titleLine1: "Financial solutions,",
+ *     titleLine2: "that actually work",
+ *     intro:
+ *       "20+ years at Škoda Auto and other VW Group companies. Since 2022 I've worked with Czech",
+ *     introHighlight: "small and mid-sized businesses",
+ *     introRest:
+ *       "setting up financial management, optimizing processes, and quickly getting up to speed beyond finance too: purchasing and suppliers, pricing, HR. A practical approach – no theoretical consulting.",
+ *     ctaPrimary: "Want a consultation?",
+ *     ctaSecondary: "Learn more",
+ *     stats: [
+ *       { value: "20+", label: "years in finance" },
+ *       { value: "Škoda Auto", label: "and other major companies" },
+ *       { value: "100%", label: "hands-on approach" },
+ *     ],
+ *   },
+ *   expertise: {
+ *     label: "What I understand",
+ *     titleLine1: "Experience from major projects,",
+ *     titleLine2: "applied to your business",
+ *     items: [
+ *       {
+ *         title: "Reporting & controlling",
+ *         description:
+ *           "Optimizing the chart of accounts. Clear dashboards in Czech. The data your management actually wants to see.",
+ *       },
+ *       {
+ *         title: "ERP implementation",
+ *         description:
+ *           "Deployment and optimization of ERP finance modules. Processes that actually work.",
+ *       },
+ *       {
+ *         title: "Financial strategy",
+ *         description:
+ *           "Growth and cashflow planning. Analysis that leads to concrete decisions.",
+ *       },
+ *     ],
+ *   },
+ *   story: {
+ *     imagePlaceholder: "Your photo",
+ *     titleLine1: "Why I chose",
+ *     titleLine2: "the fractional CFO path",
+ *     paragraph1:
+ *       "I spent 20 years in the automotive industry. I started as an analyst and gradually worked my way up into Škoda Auto's management, while also serving as a managing director of subsidiary companies. Large-scale projects, budgets in the billions, complex processes – an education nothing can replace.",
+ *     paragraph2:
+ *       "Then I realized there was nowhere left to grow and nothing new to learn. I wanted to pass my experience on where it makes a real difference: to smaller Czech companies that can't afford a CFO of their own – but need one just as much.",
+ *     highlights: [
+ *       "I work with Czech companies I truly understand",
+ *       "I'm not just an advisor – I'm a partner in the solution",
+ *       "Focused on practice, not theoretical talk",
+ *     ],
+ *     closing:
+ *       "Today I help companies that don't have an in-house CFO but need one's services – so they don't get lost in the numbers and can focus on growth.",
+ *   },
+ *   approach: {
+ *     label: "How I work",
+ *     titleLine1: "Four steps",
+ *     titleLine2: "to a solution",
+ *     steps: [
+ *       {
+ *         title: "Listen",
+ *         description: "What's troubling you. What's unclear. What you want to achieve.",
+ *       },
+ *       {
+ *         title: "Analyze",
+ *         description: "Process, data, current state. No emotions. Just facts.",
+ *       },
+ *       {
+ *         title: "Propose",
+ *         description: "Solutions that can actually be implemented. Realistic ones.",
+ *       },
+ *       {
+ *         title: "Deliver",
+ *         description: "I help you put the solution into practice. This isn't theory.",
+ *       },
+ *     ],
+ *   },
+ *   references: {
+ *     label: "References",
+ *     titleLine1: "What the companies",
+ *     titleLine2: "I've worked with say",
+ *     items: [
+ *       {
+ *         quote:
+ *           "I wish working with everyone were like working with Lenka. Efficient, helpful, and human at the same time. You get clear answers to your questions. If you ask for advice, you get it – along with the options and all their implications. What I valued in our collaboration was the speed with which she could respond without any drop in the quality of her work. Another skill I appreciated was her ability to speak in a language that even a non-finance person can understand. Last but not least, Lenka proved to be a great teacher and teammate; our collaboration was consultation-based, and after a very short time the finance team named her as someone they'd want to grow under.",
+ *         name: "Jitka Porazilová",
+ *         role: "People first!",
+ *       },
+ *       {
+ *         quote:
+ *           "Agreeing to work with Lenka 2.5 years ago was probably the best thing we could have done for our company. The business grew from a one-person operation into 17 branches, and we needed someone genuinely willing to roll up their sleeves with us and build the entire organization from the ground up. We were lucky to come across someone as versatile as Lenka, because the volume of work we used her for would take three people elsewhere. Lenka became my right hand and helped me not only in finance – where she built our whole reporting from scratch, introduced controlling and number-driven financial management, and took over communication between our accountant and the company – but we also used her for a complete setup of company-wide processes, including the transition to a new ERP system. She also supported us in developing the business, actively taking part in negotiations with suppliers over terms, working with me on cost efficiency, and negotiating savings with every link in the chain. We used her for HR topics too, where she first set up a new employee compensation system, recruitment for administrative positions, personnel and performance reviews – and whenever mediation was needed, she truly excels in that area. She has an incredible talent for tuning in not only to a situation but to people, and then constructively summarizing the key points and guiding people to a solution. For me, Lenka is the ideal manager and has a gift for leading and developing people. She is always accommodating, keeps a cool head when problems arise, looks for the optimal solution, and thanks to her open communication people trust her and come to her even with problems they wouldn't admit elsewhere. It leads to a very healthy company culture, which we now have too, thanks to her. I value her greatly as a person as well, because she has integrity and is kind and fair. It is a great honor to work with her.",
+ *         name: "Petra Steyrerová Machytková",
+ *         role: "Owner of retail chain Obuv Zóna",
+ *       },
+ *       {
+ *         quote:
+ *           "Lenka handles financial management for us. She's truly amazing! Not only does she have excellent knowledge and experience, she also finds solutions that really work. And best of all, she can explain it so that everyone understands. Her approach is professional yet very friendly at the same time. We genuinely get along with her and couldn't be more satisfied. Lenka is simply indispensable to us – thank you.",
+ *         name: "Marian Pavlik",
+ *         role: "Innovation mindset creates innovation culture",
+ *       },
+ *     ],
+ *   },
+ *   finalCta: {
+ *     label: "Contact",
+ *     title: "Let's book a consultation",
+ *     subtitle:
+ *       "Book a time online. The consultation is non-binding and I'll reply personally.",
+ *     bookLabel: "Book a time",
+ *     orLabel: "or contact me directly",
+ *     emailLabel: "Send an email",
+ *     phoneLabel: "Call me",
+ *   },
+ *   footer: {
+ *     role: "Fractional CFO",
+ *     location: "Mladá Boleslav, Czech Republic",
+ *     rights: "All rights reserved.",
+ *     backToTop: "Back to top",
+ *   },
+ * },
+ *
+ * ======================================================================== */
