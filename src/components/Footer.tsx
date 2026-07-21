@@ -1,4 +1,5 @@
 import { ArrowUp } from "@phosphor-icons/react";
+import { LogoMark } from "./Logo";
 import { useLanguage } from "../i18n/LanguageContext";
 import { siteConfig } from "../siteConfig";
 
@@ -9,6 +10,7 @@ export function Footer() {
   return (
     <footer className="bg-charcoal px-6 py-12 text-center text-cream md:px-12">
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-4">
+        <LogoMark size={56} />
         <p className="text-sm">
           <strong className="font-serif font-bold">{siteConfig.name}</strong>
           <span className="opacity-70"> · {t.footer.role}</span>
