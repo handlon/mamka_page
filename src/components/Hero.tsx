@@ -81,7 +81,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden border-b-2 border-border bg-cream pb-16 pt-32 md:pb-24 md:pt-40"
+      className="relative overflow-hidden border-b-2 border-border bg-cream pb-16 pt-24 md:pb-24 md:pt-40"
     >
       <div className="absolute left-0 top-0 h-full w-1 bg-gold" aria-hidden="true" />
       <HeroOrnament />
@@ -97,7 +97,7 @@ export function Hero() {
             {t.hero.eyebrow}
           </motion.p>
 
-          <h1 className="mb-6 font-serif text-[38px] font-bold leading-[1.15] text-ink md:text-[56px]">
+          <h1 className="mb-6 font-serif text-[32px] font-bold leading-[1.15] text-ink md:text-[56px]">
             <motion.span className="block overflow-hidden">
               <motion.span
                 className="block"
@@ -126,7 +126,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.55 }}
-            className="mb-8 max-w-lg text-[15px] leading-[1.8] text-ink-muted md:text-base"
+            className="mb-8 max-w-lg text-base leading-[1.75] text-ink-muted"
           >
             {t.hero.intro}{" "}
             <span className="font-semibold text-brand">{t.hero.introHighlight}</span>{" "}
@@ -171,7 +171,7 @@ export function Hero() {
             {t.hero.stats.map((stat) => (
               <div key={stat.label}>
                 <div className="font-serif text-xl font-bold text-ink md:text-2xl">{stat.value}</div>
-                <div className="text-[12px] text-ink-soft">{stat.label}</div>
+                <div className="text-[13px] text-ink-soft md:text-[12px]">{stat.label}</div>
               </div>
             ))}
           </motion.div>

@@ -1,9 +1,9 @@
 // TODO: replace with real contact details before launch.
 export const siteConfig = {
   name: "Lenka Handlíková",
-  email: "lenka@handlikova.cz",
-  phone: "+420 123 456 789",
-  phoneDisplay: "+420 123 456 789",
+  email: "lenka.handlik@gmail.com",
+  phone: "+420 604 793 363",
+  phoneDisplay: "+420 604 793 363",
 
   // TODO: replace with the real Calendly scheduling link, e.g.
   // "https://calendly.com/lenka-handlikova/konzultace"

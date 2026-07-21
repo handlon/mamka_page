@@ -13,8 +13,8 @@ export function Footer() {
           <strong className="font-serif font-bold">{siteConfig.name}</strong>
           <span className="opacity-70"> · {t.footer.role}</span>
         </p>
-        <p className="text-xs opacity-70">{t.footer.location}</p>
-        <p className="text-xs opacity-70">
+        <p className="text-[13px] opacity-70 md:text-xs">{t.footer.location}</p>
+        <p className="text-[13px] opacity-70 md:text-xs">
           <a href={`mailto:${siteConfig.email}`} className="cursor-pointer hover:text-gold hover:underline">
             {siteConfig.email}
           </a>

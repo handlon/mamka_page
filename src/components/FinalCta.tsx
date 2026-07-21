@@ -8,7 +8,7 @@ export function FinalCta() {
   const { t } = useLanguage();
 
   return (
-    <section id="contact" className="relative overflow-hidden bg-brand py-20 text-cream md:py-28">
+    <section id="contact" className="relative overflow-hidden bg-brand py-14 text-cream md:py-28">
       <div
         className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-gold/20 blur-3xl"
         aria-hidden="true"
@@ -22,8 +22,8 @@ export function FinalCta() {
           <p className="mb-3 text-[12px] font-bold uppercase tracking-[2px] text-gold/90">
             {t.finalCta.label}
           </p>
-          <h2 className="mb-3 font-serif text-[30px] font-bold md:text-[38px]">{t.finalCta.title}</h2>
-          <p className="mx-auto mb-9 max-w-xl text-[15px] opacity-90">{t.finalCta.subtitle}</p>
+          <h2 className="mb-3 font-serif text-[26px] font-bold md:text-[38px]">{t.finalCta.title}</h2>
+          <p className="mx-auto mb-9 max-w-xl text-base opacity-90 md:text-[15px]">{t.finalCta.subtitle}</p>
         </Reveal>
 
         <Reveal delay={0.1}>

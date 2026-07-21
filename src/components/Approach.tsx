@@ -5,13 +5,13 @@ export function Approach() {
   const { t } = useLanguage();
 
   return (
-    <section id="approach" className="bg-paper py-20 md:py-28">
+    <section id="approach" className="bg-paper py-14 md:py-28">
       <div className="mx-auto max-w-5xl px-6 md:px-12">
         <Reveal className="mb-16 text-center md:text-left">
           <p className="mb-2 text-[12px] font-bold uppercase tracking-[1.5px] text-gold-dark">
             {t.approach.label}
           </p>
-          <h2 className="font-serif text-[28px] font-bold leading-tight text-ink md:text-[34px]">
+          <h2 className="font-serif text-[24px] font-bold leading-tight text-ink md:text-[34px]">
             {t.approach.titleLine1} {t.approach.titleLine2}
           </h2>
         </Reveal>
@@ -30,7 +30,7 @@ export function Approach() {
                   </div>
                 </div>
                 <h3 className="mb-2 text-sm font-bold text-ink">{step.title}</h3>
-                <p className="mx-auto max-w-[220px] text-xs leading-relaxed text-ink-soft lg:mx-0">
+                <p className="mx-auto max-w-[240px] text-sm leading-relaxed text-ink-soft md:text-xs lg:mx-0">
                   {step.description}
                 </p>
               </div>

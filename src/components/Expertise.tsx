@@ -8,13 +8,13 @@ export function Expertise() {
   const { t } = useLanguage();
 
   return (
-    <section id="expertise" className="bg-paper py-20 md:py-28">
+    <section id="expertise" className="bg-paper py-14 md:py-28">
       <div className="mx-auto max-w-5xl px-6 md:px-12">
         <Reveal className="mb-14">
           <p className="mb-2 text-[12px] font-bold uppercase tracking-[1.5px] text-gold-dark">
             {t.expertise.label}
           </p>
-          <h2 className="font-serif text-[28px] font-bold leading-tight text-ink md:text-[34px]">
+          <h2 className="font-serif text-[24px] font-bold leading-tight text-ink md:text-[34px]">
             {t.expertise.titleLine1}
             <br />
             {t.expertise.titleLine2}
@@ -33,7 +33,7 @@ export function Expertise() {
                   <h3 className="mb-2 font-serif text-base font-bold text-ink md:text-lg">
                     {item.title}
                   </h3>
-                  <p className="text-[13px] leading-relaxed text-ink-muted md:text-sm">
+                  <p className="text-[15px] leading-relaxed text-ink-muted md:text-sm">
                     {item.description}
                   </p>
                 </div>
