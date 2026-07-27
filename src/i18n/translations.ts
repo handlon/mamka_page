@@ -89,7 +89,7 @@ export const translations: Record<"cs", Translation> = {
       titleLine1: "Finanční řešení,",
       titleLine2: "která opravdu fungují",
       intro:
-        "20+ let ve Škoda Auto a VW koncernových společnostech. Od roku 2022 pracuji s českými malými a středními firmami",
+        "20+ let ve Škoda Auto a VW koncernových společnostech. Od roku 2022 pracuji s českými malými a středními firmami,",
       introHighlight: "zavádím finanční řízení, optimalizuji procesy",
       introRest:
         "a rychle se zorientuji i mimo finance: nákup a dodavatelé, cenotvorba, HR. Praktický přístup – žádné teoretické poradenství.",
@@ -129,13 +129,13 @@ export const translations: Record<"cs", Translation> = {
       titleLine1: "Proč jsem si zvolila",
       titleLine2: "cestu externí CFO",
       paragraph1:
-        "Strávila jsem 20 let v automobilovém průmyslu. Začínala jsem jako analytička, postupně profesně rostla až do managementu firmy Škoda Auto a zároveň na jednatele dceřiných společností. Velké projekty, rozpočty v miliardách, komplexní procesy – škola, která se nedá ničím nahradit.",
+        "Strávila jsem 20 let v automobilovém průmyslu. Začínala jsem jako analytička, postupně profesně rostla až do managementu firmy Škoda Auto a zároveň jsem působila jako jednatel koncernových dceřiných společností. Velké projekty, rozpočty v miliardách, komplexní procesy – škola, která se nedá ničím nahradit.",
       paragraph2:
-        "Pak jsem ale zjistila, že už nemám kam růst ani co nového se učit. A chtěla jsem svoje zkušenosti předávat tam, kde mají skutečný dopad: menším českým firmám, které si nemůžou dovolit vlastního CFO – ale potřebují ho úplně stejně.",
+        "Následně jsem se rozhodla, že je čas, předávát moje zkušenosti tam, kde mají skutečný dopad a okamžitý efekt: menším českým firmám, které si nemůžou dovolit vlastního CFO – ale potřebují ho úplně stejně.",
       highlights: [
         "Pracuji s českými firmami, kterým rozumím",
         "Nejsem jen poradce – jsem partner v řešení",
-        "Fokus na praxi, ne na teoretická slova",
+        "Fokus na praxi, ne na teorii",
       ],
       closing:
         "Dnes pomáhám firmám, které nemají interní CFO, ale jeho služby potřebují. Aby se neztrácely v číslech a mohly se soustředit na růst.",
@@ -147,19 +147,19 @@ export const translations: Record<"cs", Translation> = {
       steps: [
         {
           title: "Poslechnout",
-          description: "Co vás trápí. Co není jasné. Co chcete dosáhnout.",
+          description: "Co vás trápí. Co není jasné. Čeho chcete dosáhnout.",
         },
         {
           title: "Analyzovat",
-          description: "Proces, data, současný stav. Bez emocí. Jen fakta.",
+          description: "Proces, data, systémy a současný stav financí.",
         },
         {
           title: "Navrhnout",
-          description: "Řešení, která se dají opravdu implementovat. Realistická.",
+          description: "Řešení, která se dají opravdu implementovat a jsou realistická.",
         },
         {
           title: "Realizovat",
-          description: "Pomáhám vám uvést řešení do praxe. Nejde o teorii.",
+          description: "Pomohu vám uvést řešení do praxe.",
         },
       ],
     },
