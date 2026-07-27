@@ -109,7 +109,7 @@ export const translations: Record<"cs", Translation> = {
           {
           title: "Reporting & controlling",
           description:
-            "Optimalizace účetní osnovy. Dashboardy v češtině. Data, která vedení firmy opravdu chce vidět.",
+            "Optimalizace účetní osnovy. Nastavení pravidelných reportů. Data, na základě kterých může firma dělat business rozhodnutí.",
         },
         {
           title: "ERP implementace",
