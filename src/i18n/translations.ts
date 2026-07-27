@@ -131,7 +131,7 @@ export const translations: Record<"cs", Translation> = {
       paragraph1:
         "Strávila jsem 20 let v automobilovém průmyslu. Začínala jsem jako analytička, postupně profesně rostla až do managementu firmy Škoda Auto a zároveň jsem působila jako jednatel koncernových dceřiných společností. Velké projekty, rozpočty v miliardách, komplexní procesy – škola, která se nedá ničím nahradit.",
       paragraph2:
-        "Následně jsem se rozhodla, že je čas, předávát moje zkušenosti tam, kde mají skutečný dopad a okamžitý efekt: menším českým firmám, které si nemůžou dovolit vlastního CFO – ale potřebují ho úplně stejně.",
+        "Následně jsem se rozhodla, že je čas, předávat moje zkušenosti tam, kde mají skutečný dopad a okamžitý efekt: menším českým firmám, které si nemůžou dovolit vlastního CFO – ale potřebují ho úplně stejně.",
       highlights: [
         "Pracuji s českými firmami, kterým rozumím",
         "Nejsem jen poradce – jsem partner v řešení",
