@@ -174,20 +174,20 @@ export const translations: Record<"cs", Translation> = {
           quote:
             "Kéž by spolupráce se všemi byla jako s Lenkou. Efektivní, nápomocná a zároveň lidská. Na otázky dostanete jasné odpovědi. Pokud žádáte o radu, dostanete ji včetně možností a to se všemi dopady. Na naší spolupráci jsem oceňovala rychlost s jakou dokázala reagovat bez toho, aniž by utrpěla kvalita výstupů. Další ze schopností, kterou jsem kvitovala, byla schopnost mluvit jazykem, kterému dokáže porozumět i nefinanční člověk. V neposlední řadě se Lenka ukázala i jako dobrý učitel a parťák, naše spolupráce byla na bázi konzultací, finanční tým jí po velmi krátké době označil jako někoho, pod kým by chtěli růst.",
           name: "Jitka Porazilová",
-          role: "Etnetera Group",
+          role: "Etnetera Group, HR",
         },
         {
           quote:
             "Dohoda o spolupráci s Lenkou, před 2,5 lety, byla asi to nejlepší, co jsme mohli pro naši firmu udělat.Firma vyrostla z malého živnostníka na 17 poboček a bylo potřeba najít člověka, který má chuť si doslova s námi vyhrnout rukávy a stavět celou organizaci firmy od píky. Měli jsme to štěstí, že jsme narazili na někoho, tak komplexního jako je Lenka, protože na to penzum práce, na které jsme jí využili, by jinde poptávali 3.Lenka se stala mojí pravou rukou a pomohla mi nejen v oblasti financí, kde vystavěla celý reporting od nuly, zavedla controlling a finanční řízení firmy přes čísla, zastřešila komunikaci mezi účetním a naší firmou, ale také jsme jí využili pro komplexní nastavení celofiremních procesů včetně přechodu na nový ERP systém. Byla mi oporou také v rozvoji businessu, kde se aktivně účastnila vyjednávání s dodavateli o podmínkách spolupráce, řešila se mnou nákladovou efektivitu a vyjednávání se všemi články řetězu o úsporách. Využili jsme ji také na HR témata, kde nejdřív nastavila nový systém odměňování zaměstnanců, nábory na administrativní pozice, personální a hodnotící pohovory a pokud byla potřeba mediace, tak za mě v této oblasti opravdu vyniká. Má neuvěřitelný talent se nacítit nejen do situace, ale i do lidí a následně konstruktivně shrnout body a dovést lidi k řešení. Lenka je za mě ideál manažera a má dar vést a rozvíjet lidi. Je vždy vstřícná, při problémech si zachovává chladnou hlavu a hledá optimální řešení a díky otevřené komunikaci k ní lidé mají důvěru a přicházejí k ní i s problémy, které by jinde nepřiznali. Vede to k velmi zdravé firemní kultuře, která je nyní, díky ní, i u nás. Velmi si jí vážím i po lidské stránce, protože je charakterní, laskavá a spravedlivá. Je mi velkou ctí s ní spolupracovat",
           name: "Petra Steyrerová",
-          role: "Obuv Zóna",
+          role: "Obuv Zóna, majitelka",
         },
 
         {
           quote:
             "Lenka pro nás dělá finanční management. Je fakt úžasná! Nejenže má skvělé znalosti a zkušenosti, ale taky umí najít řešení, která opravdu fungují. A co je nejlepší, dokáže to vysvětlit tak, že tomu rozumí každý. Její přístup je profesionální, ale zároveň velmi přátelský. Opravdu si s ní rozumíme a jsme s ní maximálně spokojeni. Lenka, je pro nás prostě nepostradatelná, díky",
           name: "Marian Pavlik",
-          role: "CEO Green Code",
+          role: "Green Code, CEO",
         },
       ],
     },
