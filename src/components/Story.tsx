@@ -1,7 +1,7 @@
 import { CheckCircle } from "@phosphor-icons/react";
 import { Reveal } from "./Reveal";
 import { useLanguage } from "../i18n/LanguageContext";
-import mugshot from "../assets/mugshot.jpg";
+import mugshot from "../assets/mugshot2.jpg";
 
 export function Story() {
   const { t } = useLanguage();
