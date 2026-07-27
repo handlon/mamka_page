@@ -1,6 +1,7 @@
-import { User, CheckCircle } from "@phosphor-icons/react";
+import { CheckCircle } from "@phosphor-icons/react";
 import { Reveal } from "./Reveal";
 import { useLanguage } from "../i18n/LanguageContext";
+import mugshot from "../assets/mugshot.jpg";
 
 export function Story() {
   const { t } = useLanguage();
@@ -14,11 +15,21 @@ export function Story() {
               className="absolute -bottom-4 -right-4 h-full w-full rounded-sm border-2 border-gold/50 md:-bottom-6 md:-right-6"
               aria-hidden="true"
             />
-            <div className="relative flex aspect-[4/5] w-full flex-col items-center justify-center gap-3 rounded-sm border border-dashed border-brand/40 bg-cream-alt p-6 text-center">
-              <User size={40} weight="thin" className="text-brand/60" />
-              <span className="text-[13px] font-medium text-ink-soft">
-                {t.story.imagePlaceholder}
-              </span>
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm shadow-soft">
+              <img
+                src={mugshot}
+                alt="Lenka Handlíková"
+                loading="lazy"
+                width={1200}
+                height={1599}
+                className="h-full w-full object-cover object-center"
+                style={{ filter: "saturate(0.9) contrast(1.02) brightness(1.02)" }}
+              />
+              {/* Subtle warm blend: light terracotta wash, strongest at the base */}
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand/25 via-brand/5 to-transparent"
+                aria-hidden="true"
+              />
             </div>
           </div>
         </Reveal>
