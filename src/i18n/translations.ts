@@ -77,7 +77,7 @@ export const translations: Record<"cs", Translation> = {
       title: "Lenka Handlíková – CFO služby pro české firmy",
     },
     nav: {
-      expertise: "Expertíza",
+      expertise: "Služby",
       story: "O mně",
       approach: "Přístup",
       references: "Reference",
@@ -86,14 +86,14 @@ export const translations: Record<"cs", Translation> = {
     },
     hero: {
       eyebrow: "Externí CFO",
-      titleLine1: "Finanční řešení,",
-      titleLine2: "která opravdu fungují",
+      titleLine1: "Finanční ředitelka na částečný úvazek,",
+      titleLine2: "pro firmy, které na vlastního CFO ještě nejsou dost velké",
       intro:
         "20+ let ve Škoda Auto a VW koncernových společnostech. Od roku 2022 pracuji s českými malými a středními firmami,",
       introHighlight: "zavádím finanční řízení, optimalizuji procesy",
       introRest:
-        "a rychle se zorientuji i mimo finance: nákup a dodavatelé, cenotvorba, HR. Praktický přístup – žádné teoretické poradenství.",
-      ctaPrimary: "Chcete konzultaci?",
+        "a rychle se zorientuji i mimo finance: nákup a dodavatelé, cenotvorba, vedení lidí. Praktický přístup – žádné teoretické poradenství.",
+      ctaPrimary: "Domluvit konzultaci",
       ctaSecondary: "Zjistit víc",
       stats: [
         { value: "20+", label: "let praxe ve financích" },
@@ -114,7 +114,7 @@ export const translations: Record<"cs", Translation> = {
         {
           title: "ERP implementace",
           description:
-            "Nasazení a optimalizace finančních modulů ERP. Procesy, které opravdu fungují.",
+            "Nasazení a optimalizace finančních modulů ERP. Procesy, které se ve firmě skutečně ujmou.",
         },
 
         {
@@ -122,6 +122,11 @@ export const translations: Record<"cs", Translation> = {
           description:
             "Plánování růstu a cashflow. Analýzy, které vedou ke konkrétním rozhodnutím.",
         },
+        {
+          title: "Finanční tým a lidé",
+          description:
+            "Vedení a rozvoj finančních týmů, propojení financí s účetnictvím do jednoho funkčního celku. Pomoc s výběrem správných lidí do financí.",
+        }
       ],
     },
     story: {
@@ -129,9 +134,9 @@ export const translations: Record<"cs", Translation> = {
       titleLine1: "Proč jsem si zvolila",
       titleLine2: "cestu externí CFO",
       paragraph1:
-        "Strávila jsem 20 let v automobilovém průmyslu. Začínala jsem jako analytička, postupně profesně rostla až do managementu firmy Škoda Auto a zároveň jsem působila jako jednatel koncernových dceřiných společností. Velké projekty, rozpočty v miliardách, komplexní procesy – škola, která se nedá ničím nahradit.",
+        "Strávila jsem 20 let v automobilovém průmyslu. Začínala jsem jako analytička, postupně profesně rostla až do managementu firmy Škoda Auto a zároveň jsem působila jako jednatelka koncernových dceřiných společností. Velké projekty, rozpočty v miliardách, komplexní procesy – škola, která se nedá ničím nahradit.",
       paragraph2:
-        "Následně jsem se rozhodla, že je čas, předávat moje zkušenosti tam, kde mají skutečný dopad a okamžitý efekt: menším českým firmám, které si nemůžou dovolit vlastního CFO – ale potřebují ho úplně stejně.",
+        "Následně jsem se rozhodla, že je čas, předávat své zkušenosti tam, kde mají skutečný dopad a okamžitý efekt: menším českým firmám, které si nemůžou dovolit vlastního CFO – ale potřebují ho úplně stejně.",
       highlights: [
         "Pracuji s českými firmami, kterým rozumím",
         "Nejsem jen poradce – jsem partner v řešení",
@@ -146,7 +151,7 @@ export const translations: Record<"cs", Translation> = {
       titleLine2: "k řešení",
       steps: [
         {
-          title: "Poslechnout",
+          title: "Vyslechnout",
           description: "Co vás trápí. Co není jasné. Čeho chcete dosáhnout.",
         },
         {
